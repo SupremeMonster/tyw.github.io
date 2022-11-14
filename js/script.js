@@ -121,18 +121,18 @@ const beat = { a: 0 };
 gsap
   .timeline({
     repeat: -1,
-    repeatDelay: 0.3,
+    repeatDelay: 0.5,
   })
   .to(beat, {
-    a: 0.5,
-    duration: 0.6,
-    ease: "power2.in",
+    a: 20.0,
+    duration: 0.4,
+    ease: "power1.in",
   })
   .to(beat, {
     a: 0.0,
-    duration: 0.6,
-    ease: "power3.out",
-  });
+    duration: 2.2,
+    ease: "power1.out",
+  })
 
 // 0.22954521554974774 -0.22854083083283794
 const maxZ = 0.23;
